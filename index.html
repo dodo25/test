@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Моя анкета</title>
+<script src="http://yandex.st/jquery/1.8.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+    $(function() {
+        $(".menu__link").click(function(event){		
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top
+        }, 500);
+	});
+});
+</script>
+<style>
+    .page {
+        font: 100% Arial, sans-serif;
+        margin: 0;
+        padding: 20px 40px;
+    }
+    .list {
+        line-height: 1.4;
+    }
+    .list__question {
+        margin-left: 0;
+        font-weight: bold;
+    }
+    .list__answer {
+        margin: 10px 0 40px 0;
+    }
+    .list__anchor {
+        position: absolute;
+        visibility: hidden;
+    }
+    .wrapper_menu {
+        position: fixed;
+        top: 0;
+        right: 20px;
+
+        width: 30%;
+    }
+    .menu__link {
+        
+    }
+    .layout {
+        margin-right: 30%;
+        padding-right: 40px;
+    }
+</style>
+<style type="text/css" media="print">
+    a {
+        text-decoration: none;
+        color: black;
+    } 
+</style>
+</head>
+
+<body class="page">
+    <div class="wrapper wrapper_menu">
+        <h2 class="header">Оглавление</h2>
+        <ol class="menu">
+            <li class="menu__item"> Общие вопросы
+                <ol class="menu menu_child">
+                    <li class="menu__item"><a href="#q-1-1" class="menu__link"></a></li>
+                    <li class="menu__item"><a href="#q-1-2" class="menu__link"></a></li>
+                    <li class="menu__item"><a href="#q-1-3" class="menu__link"></a></li>
+                </ol>
+            </li>
+            <li class="menu__item"> Опыт разработки
+                <ol class="menu menu_child">
+                    <li class="menu__item"><a href="#q-2-1" class="menu__link">Опыт</a></li>
+                    <li class="menu__item"><a href="#q-2-2" class="menu__link">Языки</a></li>
+                    <li class="menu__item"><a href="#q-2-3" class="menu__link">Редакторы</a></li>
+                    <li class="menu__item"><a href="#q-2-4" class="menu__link">Операционные системы</a></li>
+                    <li class="menu__item"><a href="#q-2-5" class="menu__link">Системы контроля версий</a></li>
+                    <li class="menu__item"><a href="#q-2-6" class="menu__link">Системы постановки и ведения задач</a></li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div class="layout">
+        <h2 class="header">Общие вопросы</h2>
+        <dl class="list">
+
+        </dl>
+        <h2 class="header">Опыт разработки</h2>
+        <dl class="list">
+            <dd class="list__question"><a class="list__anchor" id="q-2-1">*</a>Расскажите нам о вашем опыте разработки. Ничего не упускайте: это может быть как серьезный интерфейс, так и просто домашняя страничка.
+            Подробнее: http://company.yandex.ru/job/vacancies/shri.xml</dd>
+            <dt class="list__answer">asdasdjasd</dt>
+            <dd class="list__question"><a class="list__anchor" id="q-2-2">*</a>Какие языки программирования, фреймворки и технологии вы использовали? Сложились ли у вас личные предпочтения?
+    Подробнее: http://company.yandex.ru/job/vacancies/shri.xml</dd>
+            <dt class="list__answer">asdasdjasd</dt>
+            <dd class="list__question"><a class="list__anchor" id="q-2-3">*</a>Какие редакторы и среды разработки вы использовали? Чем обычно пользуетесь?
+    Подробнее: http://company.yandex.ru/job/vacancies/shri.xml</dd>
+            <dt class="list__answer">asdasdjasd</dt>
+            <dd class="list__question"><a class="list__anchor" id="q-2-4">*</a>С какими ОС приходилось сталкиваться? Для каких целей вы их использовали?
+    Подробнее: http://company.yandex.ru/job/vacancies/shri.xml</dd>
+            <dt class="list__answer">asdasdjasd</dt>
+            <dd class="list__question"><a class="list__anchor" id="q-2-5">*</a>Приходилось ли вам пользоваться системами контроля версий? Если да, то какими? Какая из них вам нравится больше всего?
+    Подробнее: http://company.yandex.ru/job/vacancies/shri.xml/</dd>
+            <dt class="list__answer">asdasdjasd</dt>
+            <dd class="list__question"><a class="list__anchor" id="q-2-6">*</a>Использовали ли вы системы постановки и ведения задач?
+    Подробнее: http://company.yandex.ru/job/vacancies/shri.xml</dd>
+        </dl>
+    </div>
+</body>
+</html>
